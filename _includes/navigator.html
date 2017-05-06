@@ -3,7 +3,7 @@
   <ul>
     {% for tag in site.tags %}
       <li>
-        <a href="/tags/{{ tag[0] }}/"><span class="tag">{{ tag[0] }}</span></a>
+        <a href="/tags/{{ tag[0] }}"><span class="tag">{{ tag[0] }}</span></a>
         <span class="quote">({{ tag[1].size }})</span>
         <ul>
           {% if false %}
