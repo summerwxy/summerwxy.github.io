@@ -30,9 +30,8 @@ markdown: kramdown
 theme: jekyll-theme-hacker
 gems:
   - jekyll-feed
-
 exclude:
   - Gemfile
   - Gemfile.lock
 
-
+timezone: Asia/Taipei

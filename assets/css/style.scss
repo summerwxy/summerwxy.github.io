@@ -3,11 +3,47 @@
 
 @import 'jekyll-theme-hacker';
 
+header h1 a {
+    color: #b5e853 !important; 
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1) !important; 
+    text-decoration: none;
+}
+
 .container {
     max-width: 1024px;
+}
+
+footer {
+  border-top: 1px dashed #b5e853;
+}
+
+#main_content h6 {
+  text-transform: inherit;
 }
 
 .title-icon {
   max-height: 32px;
   max-width: 32px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.quote {
+    font-size: 12px;
+    color: #999;
+}
+
+.navi {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px #333 solid;
+  border-radius: 20px;  
+  padding: 30px;
+  float: left; 
+  margin-left: -180px;
 }

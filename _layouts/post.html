@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{% include navigator.html %}
+
+<div class="container">
+  <h2>{{ page.title }}</h2>
+  <h6>
+  Date: {{ page.date | date: "%Y/%m/%d %H:%M" }} 
+  | Tags: 
+  {% for tag in page.tags %}
+      <a href="/tags/{{ tag }}/">{{ tag }}</a>
+  {% endfor %}
+  <br/>
+  <div class="text-center">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>  
+        {{ page.previous.title }}
+      </a>
+    {% else %}
+        The Oldest Post
+    {% endif %}
+    |
+    {% if page.next %}
+      <a href="{{ page.next.url }}">
+        {{ page.next.title }} 
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+    {% else %}
+        The Newest Post
+    {% endif %}
+  </div>
+  </h6>
+  <hr/>
+  {{ content }}
+</div>

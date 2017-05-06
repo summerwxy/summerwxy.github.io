@@ -1,0 +1,18 @@
+<nav class="navi">
+  <h2>Tags:</h2>
+  <ul>
+    {% for tag in site.tags %}
+      <li>
+        <a href="/tags/{{ tag[0] }}/"><span class="tag">{{ tag[0] }}</span></a>
+        <span class="quote">({{ tag[1].size }})</span>
+        <ul>
+          {% if false %}
+            {% for post in tag[1] %}
+              <li><a href="{{ post.url }}">{{ post.title }}</a></li>    
+            {% endfor %}
+          {% endif %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

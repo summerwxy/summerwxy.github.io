@@ -5,19 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <script src="https://use.fontawesome.com/d170ec49af.js"></script>
     <title>{{ site.title }}</title>
   </head>
-
   <body>
-
     {% include header.html %}
-
     <div class="container">
       <section id="main_content">
         {{ content }}
       </section>
     </div>
-
     {% include footer.html %}
   </body>
 </html>

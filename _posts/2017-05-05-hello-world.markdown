@@ -1,26 +1,18 @@
 ---
-layout: default
+layout: post
 title:  "Hello, World!"
-date:   2017-05-05 12:16:00 +0800
-tags: [foo, bar]
+date:   2017-05-05 12:16:00 +08:00
+tags: [Jekyll, foo]
 ---
+
+
+
 
 第一篇文章, 測試看看效果是什麼樣子
 
-{% highlight javascript %}
+```js
 console.log('Hello, World!');
-{% endhighlight %}
-
-
-
-
-
-
-
-
-
-
-
+```
 
 
 

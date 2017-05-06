@@ -1,0 +1,25 @@
+---
+layout: default
+---
+{% include navigator.html %}
+
+<div class="container">
+  <h2>Tag Name: {{ page.tag }}</h2>
+
+  {% unless page.content == '' %}
+    <p>{{ page.content }}</p>
+  {% endunless %}
+
+  {% if site.tags[page.tag].size == 0 %}
+    <p>No posts in this tag at this time.</p>
+  {% endif %}
+
+  <ul>
+  {% for post in site.tags[page.tag] %}
+    <li>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="quote"> {{ post.date | date: "%Y/%m/%d %H:%M" }}</span>
+    </li>
+  {% endfor %}
+  <ul>
+</div>
