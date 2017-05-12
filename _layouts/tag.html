@@ -18,7 +18,7 @@ layout: default
   {% for post in site.tags[page.tag] %}
     <li>
       <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <span class="quote"> {{ post.date | date: "%Y/%m/%d %H:%M" }}</span>
+      <span class="quote"> {{ post.created | date: "%Y/%m/%d %H:%M" }}</span>
     </li>
   {% endfor %}
   <ul>

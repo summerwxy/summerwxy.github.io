@@ -6,7 +6,8 @@ layout: default
 <div class="container">
   <h2>{{ page.title }}</h2>
   <h6>
-  Date: {{ page.date | date: "%Y/%m/%d %H:%M" }} 
+  Created: {{ page.created | date: "%Y/%m/%d %H:%M" }} 
+  | Modified: {{ page.modified | date: "%Y/%m/%d %H:%M" }} 
   | Tags: 
   {% for tag in page.tags %}
       <a href="/tags/{{ tag }}">{{ tag }}</a>

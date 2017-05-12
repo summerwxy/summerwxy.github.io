@@ -7,7 +7,7 @@ layout: home
     {% for post in site.posts %}
       <li>
         {% assign date_format = "%Y-%m-%d" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">{{ post.created | date: date_format }}</span>
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </h2>

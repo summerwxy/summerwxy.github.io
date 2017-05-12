@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  在 NG2 安裝 echarts
-date:   2017-05-06 16:11:00 +08:00
+created: 2017-05-08 13:59:47
+modified: 2017-05-08 13:59:47
 tags: [Angular, echarts]
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  關於 Github Pages + Jekyll
-date:   2017-05-06 11:30:00 +08:00
+created: 2017-05-06 11:25:30
+modified: 2017-05-11 11:39:59
 tags: [Jekyll]
 ---
 
@@ -36,5 +37,5 @@ bundle exec jekyll serve # 訪問 http://localhost:4000/
 
 * [Highlight 支援的清單](https://haisum.github.io/2014/11/07/jekyll-pygments-supported-highlighters/)
 * [Jekyll 內建變數](https://jekyllrb.com/docs/variables/)
-
+* [Jekyll 安裝在 Windows 奇怪錯誤的處理方法](https://github.com/mzlogin/mzlogin.github.io/wiki/Problems-and-solutions-when-run-Jekyll-on-Windows)
 
