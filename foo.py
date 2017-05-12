@@ -18,9 +18,9 @@ def main():
       newlines = []
       for line in f.readlines():
         if line.startswith("created:"):
-          newlines.append("created: " + str(ctime)[0:19] + "\n")
+          newlines.append("created: " + str(ctime)[0:19] + " +08:00\n")
         elif line.startswith("modified:"):
-          newlines.append("modified: " + str(mtime)[0:19] + "\n")
+          newlines.append("modified: " + str(mtime)[0:19] + " +08:00\n")
         else:
           newlines.append(line)
         # tags prepare

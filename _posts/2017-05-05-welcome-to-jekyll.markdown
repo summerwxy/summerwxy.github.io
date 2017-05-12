@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-created: 2017-05-05 11:25:56
-modified: 2017-05-06 11:32:49
+created: 2017-05-05 11:25:56 +08:00
+modified: 2017-05-06 11:32:49 +08:00
 tags: [Jekyll, foo]
 ---
 

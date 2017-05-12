@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Hello, World!"
-created: 2017-05-05 12:15:49
-modified: 2017-05-06 12:33:23
+created: 2017-05-05 12:15:49 +08:00
+modified: 2017-05-06 12:33:23 +08:00
 tags: [Jekyll, foo]
 ---
 
