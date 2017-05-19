@@ -47,7 +47,7 @@ def main():
         f.write('tag: ' + tag + '\n')
         f.write('---\n')
 
-  print("created, modified, tags okay!")
+  print(">>>>> created date, modified date, tag files okay!! <<<<<")
 
 if __name__ == '__main__':
   main()
