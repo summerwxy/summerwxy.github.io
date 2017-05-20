@@ -2,8 +2,8 @@
 layout: post
 title:  Node.js Express
 created: 2017-05-13 12:46:51 +08:00
-modified: 2017-05-13 13:11:14 +08:00
-tags: [Node.js]
+modified: 2017-05-13 13:04:40 +08:00
+tags: [Node.js, Heroku]
 ---
 
 ## 非常陽春的版本
@@ -47,5 +47,23 @@ $ npm install
 $ SET DEBUG=express:* 
   這行幹什麼用的, 還沒研究
 $ npm start
-  訪問 [http://localhost:3000]() console 裡面沒有提示
+  訪問 http://localhost:3000 console 裡面沒有提示
 ```
+
+## 把 express app 放上 Heroku
+
+在 Heroku 跑 node.js 其實很簡單, 首先在目錄裡面新增一個  Procfile 檔案, 內容填上
+```
+web: node app.js
+```
+
+如果是靠, express-generator 生出專案的, 記得在 app.js 最底下加上, 下面內容.
+```
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+```
+
+用 git push 到 Heroku 後, 就是正式發布了.
