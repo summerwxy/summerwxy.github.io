@@ -8,12 +8,14 @@ tags: [Windows]
 
 
 * 在 windows 中新增虛擬目錄, 方便把不同專案的東西放在一起使用
+
 ```
 $ mklink /D E:\code\ExtJS\_posts E:\code\summerwxy.github.io\_posts
 symbolic link created for E:\code\ExtJS\_posts <<===>> E:\code\summerwxy.github.io\_posts
 ```
 
 * 找到並刪除某個 port 的 process, 例: 4200 port
+
 ```
 $ netstat -aon | findstr :4200
   TCP    127.0.0.1:4200         0.0.0.0:0              LISTENING       10268

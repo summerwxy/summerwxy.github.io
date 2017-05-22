@@ -11,18 +11,18 @@ tags: [Jekyll]
 * 到 [Ruby Downloads 頁面](http://rubyinstaller.org/downloads/) 下載安裝 RubyInstaller + Development Kit
 * Development Kit 安裝方式, 解壓縮目錄, 然後 cmd 畫面中輸入
 ```
-dk init
-dk install
+$ dk init
+$ dk install
 ```
 
 * 安裝 Jekyll
 ```
-gem install jekyll bundler
-jekyll new my-awesome-site
-cd my-awesome-site
-bundle update # 如果有狀況用這兩行, 更新 lib
-bundle install # 重新安裝 lib
-bundle exec jekyll serve # 訪問 http://localhost:4000/
+$ gem install jekyll bundler
+$ jekyll new my-awesome-site
+$ cd my-awesome-site
+$ bundle update     // 如果有狀況用這兩行, 更新 lib
+$ bundle install     // 重新安裝 lib
+$ bundle exec jekyll serve     // 訪問 http://localhost:4000/
 ```
 
 * 預設使用 Minima theme

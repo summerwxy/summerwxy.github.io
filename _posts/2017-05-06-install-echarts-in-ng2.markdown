@@ -8,7 +8,7 @@ tags: [Angular, echarts]
 
 * cmd 輸入, 會在 package.json 的 dependencies 裡面加上一行, "echarts"
 ```
-npm install echarts --save
+$ npm install echarts --save
 ```
 * 到 .angular-cli.json 的 scripts 裡面加上 
 ```js
